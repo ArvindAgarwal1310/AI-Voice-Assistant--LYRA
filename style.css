@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+  
+  header {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+  }
+  
+  /* New CSS for centering header content */
+  .header-content {
+    display: flex;
+    font-family:'Lucida Console', monospace;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .giff{
+    display:grid;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  #content {
+    text-align: center; /* Center the content within the section */
+  }
+  
+  .center-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some spacing below the button if needed */
+  }
+  
+  #runPythonButton {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color:#000; /* Gray color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Add round edges to the button */
+    cursor:pointer;
+    /*box-shadow: 1px 2px 2px 2px  rgba(135, 206, 239, 0.8); /* Add a 3D-like effect */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add smooth transition effects */
+  }
+  
+  #runPythonButton i {
+    margin-right: 2px; /* Add spacing between the icon and the text */
+  }
+  
+  #runPythonButton:hover {
+    background-color:#000; /* Darker gray on hover */
+    
+  }
+
+
+
+
+
+  /* Add this CSS to your styles.css or create a new CSS file and link it in your HTML */
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color:wheat;
+  max-width: 80%; /* Set a maximum width to prevent chat bubbles from taking the full width */
+}
+
+.user-message {
+  align-self: flex-end; /* Align user messages to the left */
+  color: midnightblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bot-message {
+  align-self: flex-start; /* Align bot messages to the right */
+  color: midnightblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.line-gap {
+  height: 10px; /* Set the height of the line gap between user and bot messages */
+}
